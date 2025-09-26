@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4x4eyvfklevg"]
+
+[ext_resource type="Texture2D" uid="uid://by87amjd68gb6" path="res://icon.svg" id="1_sbn1r"]
+[ext_resource type="Texture2D" uid="uid://co4rcttxgbwph" path="res://rabbit.png" id="2_ohnkx"]
+
+[node name="Icon" type="Sprite2D"]
+position = Vector2(404, 421.5)
+scale = Vector2(2.5, 2.52344)
+texture = ExtResource("1_sbn1r")
+
+[node name="Rabbit" type="Sprite2D" parent="."]
+position = Vector2(122.4, -35.8638)
+scale = Vector2(0.0904, 0.0986985)
+texture = ExtResource("2_ohnkx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rabbit"]
+position = Vector2(-561.947, 12.0455)
+scale = Vector2(4.04328, 3.17645)
+texture = ExtResource("1_sbn1r")
+
+[node name="Tree" type="Node2D" parent="."]
+position = Vector2(472.4, 73.1146)
+
+[node name="Trunk" type="ColorRect" parent="Tree"]
+offset_left = -42.8
+offset_top = 133.548
+offset_right = 20.2
+offset_bottom = 342.548
+color = Color(0.9016, 0.556774, 0.209773, 1)
+
+[node name="Leaves" type="ColorRect" parent="Tree"]
+anchors_preset = -1
+offset_left = -106.8
+offset_top = 113.337
+offset_right = 97.2
+offset_bottom = 234.337
+color = Color(0.602334, 0.903772, 0.283288, 1)
+
+[node name="Tree4" type="Node2D" parent="."]
+position = Vector2(150.4, 543.505)
+
+[node name="Trunk" type="ColorRect" parent="Tree4"]
+offset_left = -42.8
+offset_top = 133.548
+offset_right = 20.2
+offset_bottom = 342.548
+color = Color(0.9016, 0.556774, 0.209773, 1)
+
+[node name="Leaves" type="ColorRect" parent="Tree4"]
+anchors_preset = -1
+offset_left = -106.8
+offset_top = 113.337
+offset_right = 97.2
+offset_bottom = 234.337
+color = Color(0.602334, 0.903772, 0.283288, 1)
+
+[node name="Tree3" type="Node2D" parent="."]
+position = Vector2(513.6, 536.768)
+
+[node name="Trunk" type="ColorRect" parent="Tree3"]
+offset_left = -42.8
+offset_top = 133.548
+offset_right = 20.2
+offset_bottom = 342.548
+color = Color(0.9016, 0.556774, 0.209773, 1)
+
+[node name="Leaves" type="ColorRect" parent="Tree3"]
+anchors_preset = -1
+offset_left = -106.8
+offset_top = 113.337
+offset_right = 97.2
+offset_bottom = 234.337
+color = Color(0.602334, 0.903772, 0.283288, 1)
+
+[node name="Tree2" type="Node2D" parent="."]
+position = Vector2(744, 32.2972)
+
+[node name="Trunk" type="ColorRect" parent="Tree2"]
+offset_left = -42.8
+offset_top = 133.548
+offset_right = 20.2
+offset_bottom = 342.548
+color = Color(0.9016, 0.556774, 0.209773, 1)
+
+[node name="Leaves" type="ColorRect" parent="Tree2"]
+anchors_preset = -1
+offset_left = -106.8
+offset_top = 108.978
+offset_right = 97.2
+offset_bottom = 229.978
+color = Color(0.602334, 0.903772, 0.283288, 1)
