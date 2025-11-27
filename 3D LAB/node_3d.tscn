@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbjk25qv1k861"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_4xowi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_a202f"]
+material = SubResource("ORMMaterial3D_4xowi")
+
+[sub_resource type="Environment" id="Environment_4xowi"]
+
+[sub_resource type="Environment" id="Environment_a202f"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(0.999966, -0.008237779, 0, 0.008237779, 0.999966, 0, 0, 0, 1, -0.005997896, -0.0076241493, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -9.313226e-10, 0, 9.313226e-10, 1, 0, 0, 0, 1, 1.0827118, -1.086208, -0.46084023)
+mesh = SubResource("BoxMesh_a202f")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+environment = SubResource("Environment_4xowi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a202f")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, -2.5052577e-07, 0, 2.5052577e-07, 1, 0, 0, 0, 1, -0.28928098, -0.2001637, -0.21822119)
+size = Vector3(1.756958, 0.3083496, 1.1845093)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, -1.10827386e-07, 0, 1.10827386e-07, 1, 0, 0, 0, 1, -0.6016532, -0.2678484, 0.35298753)
