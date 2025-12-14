@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://2my35707mhu1"]
+
+[ext_resource type="PackedScene" uid="uid://dkvxm2gs554kg" path="res://player.tscn" id="1_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ca54dd2w5y66f" path="res://hud.tscn" id="2_7mycd"]
+[ext_resource type="PackedScene" uid="uid://84ettqplftdh" path="res://SpikeHazard.tscn" id="3_272bh"]
+[ext_resource type="PackedScene" uid="uid://brrdvnck1h07f" path="res://enemyhazard.tscn" id="4_5vw27"]
+[ext_resource type="PackedScene" uid="uid://c3ohsjla13iys" path="res://checkpoint.tscn" id="5_kek77"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_lquwl")]
+
+[node name="HUD" parent="." instance=ExtResource("2_7mycd")]
+
+[node name="Area2D" parent="." instance=ExtResource("3_272bh")]
+
+[node name="EnemyHazard" parent="." instance=ExtResource("4_5vw27")]
+
+[node name="Checkpoint" parent="." instance=ExtResource("5_kek77")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.26999998, 0.26999998, 1)
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+scale = Vector2(2000, 50)
+shape = SubResource("RectangleShape2D_lquwl")

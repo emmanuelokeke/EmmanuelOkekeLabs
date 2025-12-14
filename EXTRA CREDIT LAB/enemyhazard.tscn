@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://brrdvnck1h07f"]
+
+[ext_resource type="Script" uid="uid://t28w1wpatgcl" path="res://EnemyHazard.gd" id="1_5xmbv"]
+[ext_resource type="Texture2D" uid="uid://b305xog2cx162" path="res://Photo on 9-12-22 at 1.17 PM.jpg" id="2_m5gjm"]
+
+[node name="EnemyHazard" type="Area2D" groups=["hazard_enemy"]]
+script = ExtResource("1_5xmbv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_m5gjm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

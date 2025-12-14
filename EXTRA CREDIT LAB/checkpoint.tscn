@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3ohsjla13iys"]
+
+[ext_resource type="Script" uid="uid://dhyah562boi5d" path="res://checkpoint.gd" id="1_luqgl"]
+
+[node name="Checkpoint" type="Area2D" groups=["checkpoint"]]
+script = ExtResource("1_luqgl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
